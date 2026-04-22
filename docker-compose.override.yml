@@ -1,0 +1,15 @@
+services:
+  bot:
+    build:
+      context: .
+      target: builder
+    command: npm run dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: "no"
+    environment:
+      - NODE_ENV=development
+
+  cookie-getter:
+    restart: "no"

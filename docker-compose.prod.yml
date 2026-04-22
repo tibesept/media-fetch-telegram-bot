@@ -1,0 +1,11 @@
+services:
+  bot:
+    build:
+      context: .
+      target: production
+    restart: always
+    environment:
+      - NODE_ENV=production
+
+  cookie-getter:
+    restart: always

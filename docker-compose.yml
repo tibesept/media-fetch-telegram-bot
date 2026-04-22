@@ -1,0 +1,16 @@
+services:
+  bot:
+    build: .
+    container_name: savebot_bot
+    env_file: .env
+    volumes:
+      - ./cookies:/app/cookies
+      - ./data:/app/data
+      - ./tmp:/app/tmp
+
+  cookie-getter:
+    build: ./cookie-getter
+    container_name: savebot_cookie_getter
+    env_file: .env
+    volumes:
+      - ./cookies:/app/cookies

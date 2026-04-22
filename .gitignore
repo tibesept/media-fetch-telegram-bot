@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.sqlite
+.env
+.env.local
+.env.*.local
+tmp/
+logs/
+processed_updates/
+worker.lock
+cookies/*.txt
+cookies/*.png
+cookie-getter/node_modules/
+cookie-getter/dist/
+data/
+.DS_Store
