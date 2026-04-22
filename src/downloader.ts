@@ -129,6 +129,7 @@ export async function downloadVideo(url: string, platform: Platform | string): P
 
   for (const attempt of attempts) {
     const args: string[] = [
+      '--force-ipv4',
       '--no-playlist',
       '--restrict-filenames',
       '--no-progress',
@@ -209,6 +210,7 @@ export async function downloadAudio(url: string): Promise<DownloadResult> {
   const outputTemplate = path.join(config.tempDir, `${uniq}.%(ext)s`);
 
   const args: string[] = [
+    '--force-ipv4',
     '--no-playlist',
     '-x',
     '--audio-format', 'mp3',
@@ -271,6 +273,7 @@ export async function downloadPlaylist(url: string, maxTracks: number): Promise<
   const outputTemplate = path.join(config.tempDir, `${uniq}_%(playlist_index)03d.%(ext)s`);
 
   const args: string[] = [
+    '--force-ipv4',
     '-x',
     '--audio-format', 'mp3',
     '--audio-quality', '0',
