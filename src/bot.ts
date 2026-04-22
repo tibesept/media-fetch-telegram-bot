@@ -279,8 +279,8 @@ function helpText(): string {
     `- TikTok\n` +
     `- Instagram (Reels и посты с видео)\n` +
     `- VK Видео\n` +
-    `- YouTube Shorts\n` +
-    `- 🎵 Yandex Music (треки, альбомы, плейлисты)`
+    `- YouTube Shorts`
+    // `- 🎵 Yandex Music (треки, альбомы, плейлисты)`
   );
 }
 

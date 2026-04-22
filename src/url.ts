@@ -30,9 +30,9 @@ export function detectPlatform(url: string): Platform | null {
     return null;
   }
 
-  if (host.includes('music.yandex.ru') || host.includes('music.yandex.com')) {
-    return 'Yandex Music';
-  }
+  // if (host.includes('music.yandex.ru') || host.includes('music.yandex.com')) {
+  //   return 'Yandex Music';
+  // }
 
   return null;
 }
